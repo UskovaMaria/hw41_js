@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container container_center">
+        <h1>Image editor my paint</h1>
+        <div class="tools">
+            <button class="button undo">Undo</button>
+            <button class="button clear">Clear</button>
+
+            <div class="color" style="background: red;"></div>
+            <div class="color" style="background: green;"></div>
+            <div class="color" style="background: blue;"></div>
+            <div class="color" style="background: yellow;"></div>
+
+            <input type="color" class="color-picker">
+            <input type="range" class="pen-range" min="1" max="100">
+
+            <a href="#" class="save-btn">save to file</a>
+            <button class="button-load">load from file</button>
+        </div>
+    </div>
+
+    <div class="container container_center container_fullsize">
+        <canvas id="canvas" width="800" height="600"></canvas>
+    </div>
+    
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
